@@ -21,7 +21,7 @@
          compatible = "zmk,behavior-hold-tap";
          label = "HOMEROW_MODS";
          #binding-cells = <2>;
-         tapping-term-ms = <180>;
+         tapping-term-ms = <220>;
          quick-tap-ms = <0>;
          flavor = "tap-preferred";
          bindings = <&kp>, <&kp>;
@@ -50,14 +50,14 @@
          lower_layer {
          
             // -----------------------------------------------------------------------------------------
-            // ||     |     |     |     |K_PASTE|   |     |     | UNDO | COPY |     ||
-            // ||     |K_REDO|     |     |     |   | LFT | DWN | UP  | RGT |     ||
+            // ||     |     |     | PST |     |   |     |     | UND | CPY |     ||
+            // ||     | RDO |     |     |     |   | LFT | DWN | UP  | RGT |     ||
             // ||     |     |     |     |     |   |     |     |     |     |     ||
             //              | GUI | LWR | BCK |   | ENT |     |     |
 
             bindings = <
-               &none &none &none &none &none &kp LG(V)   &none    &none    &kp LG(Z)  &kp LG(C) &none &none
-               &none &kp LS(LG(Z)) &none &none &none &none   &kp LEFT &kp DOWN &kp UP &kp RIGHT &none &none
+               &none &none &none &none &kp LG(V) &none   &none    &none    &kp LG(Z)  &kp LG(C) &none &none
+               &none &none &kp LS(LG(Z)) &none &none &none   &kp LEFT &kp DOWN &kp UP &kp RIGHT &none &none
                &none &none &none &none &none &none   &none    &none    &none  &none     &none &none
                                  &kp LGUI &mo 1 &kp BSPC   &kp RET  &trans   &trans
             >;

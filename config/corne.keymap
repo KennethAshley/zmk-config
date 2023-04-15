@@ -50,14 +50,14 @@
          lower_layer {
          
             // -----------------------------------------------------------------------------------------
-            // ||     |     |     |     |     |   |     |     |     |     |     ||
-            // ||     |     |     |     |     |   | LFT | DWN | UP  | RGT |     ||
+            // ||     |     |     |     |K_PASTE|   |     |     | UNDO | COPY |     ||
+            // ||     |K_REDO|     |     |     |   | LFT | DWN | UP  | RGT |     ||
             // ||     |     |     |     |     |   |     |     |     |     |     ||
             //              | GUI | LWR | BCK |   | ENT |     |     |
 
             bindings = <
-               &none &none &none &none &none &none   &none    &none    &none  &none     &none &none
-               &none &none &none &none &none &none   &kp LEFT &kp DOWN &kp UP &kp RIGHT &none &none
+               &none &none &none &none &none &kp K_PASTE   &none    &none    &kp K_UNDO  &kp K_COPY     &none &none
+               &none &kp K_REDO &none &none &none &none   &kp LEFT &kp DOWN &kp UP &kp RIGHT &none &none
                &none &none &none &none &none &none   &none    &none    &none  &none     &none &none
                                  &kp LGUI &mo 1 &kp BSPC   &kp RET  &trans   &trans
             >;

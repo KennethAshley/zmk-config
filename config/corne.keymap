@@ -11,10 +11,13 @@
 #define DEFAULT 0
 #define NAV   1
 #define SYM   2
+
+&mt {
+   tapping-term-ms = <180>;
+};
 / {
-      &mt {
-         tapping-term-ms = <180>;
-      };
+
+      
       keymap {
          compatible = "zmk,keymap";
          

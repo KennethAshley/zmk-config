@@ -12,6 +12,9 @@
 #define NAV   1
 #define SYM   2
 / {
+      &mt {
+         tapping-term-ms = <180>;
+      };
       keymap {
          compatible = "zmk,keymap";
          
@@ -24,9 +27,9 @@
             //              | GUI | LWR | BCK |   | SPC | RSE | ALT
 
             bindings = <
-               &trans &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp SQT  &trans
-               &trans &mt LGUI A &mt LALT R &mt LCTRL S &mt LSHFT T &kp G   &kp M &kp N  &kp E     &kp I   &kp O    &trans
-               &trans &kp Z &kp X &kp C &kp D &kp V   &kp K &kp H  &kp COMMA &kp DOT &kp FSLH &trans
+               &none &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp SQT  &none
+               &none &mt LGUI A &mt LALT R &mt LCTRL S &mt LSHFT T &kp G   &kp M &mt LSHFT N  &mt LCTRL E &mt LALT I  &mt LGUI O &none
+               &none &kp Z &kp X &kp C &kp D &kp V   &kp K &kp H  &kp COMMA &kp DOT &kp FSLH &none
                             &kp LGUI &mo NAV &kp BSPC   &kp SPACE &mo SYM &kp RALT
             >;
          };
@@ -40,9 +43,9 @@
             //              | GUI | LWR | BCK |   | ENT |     |     |
 
             bindings = <
-               &trans &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &trans
-               &trans &trans &trans &trans &trans &trans   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-               &trans &trans &trans &trans &trans &trans   &trans   &trans   &trans &trans    &trans &trans
+               &none &none &none &none &none &none   &none    &none    &none  &none     &none &none
+               &none &none &none &none &none &none   &kp LEFT &kp DOWN &kp UP &kp RIGHT &none &none
+               &none &none &none &none &none &none   &none    &none    &none  &none     &none &none
                                  &kp LGUI &mo 1 &kp BSPC   &kp RET  &trans   &trans
             >;
          };

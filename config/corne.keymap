@@ -81,7 +81,7 @@
             bindings = <
                &trans &kp ESC   &none     &kp LG(V) &none     &none     &none    &kp LG(Z) &kp LG(C) &none      &caps_word &trans
                &trans &sk LGUI  &sk LALT  &sk LCTRL &sk LSHFT &none     &kp LEFT &kp DOWN  &kp UP    &kp RIGHT  &kp RET    &trans
-               &trans &kp LG(Z) &kp LG(X) &kp LG(C) &none     &kp LG(V) &none    &kp TAB     &kp TAB   &none      &none      &trans
+               &trans &kp LG(Z) &kp LG(X) &kp LG(C) &none     &kp LG(V) &none    &kp TAB     &kp TAB   &swapper      &none      &trans
                                  &kp LGUI &mo 1 &kp BSPC   &kp RET  &trans   &trans
             >;
          };

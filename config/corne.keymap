@@ -60,13 +60,13 @@
             // ||  Q  |  W  |  F  |  P  |  B  |   |  J  |  L   |  U  |  Y  |  '  ||
             // ||  A  |  R  |  S  |  T  |  G  |   |  M  |  N   |  E  |  I  |  O  ||
             // ||  Z  |  X  |  C  |  D  |  V  |   |  K  |  H   |  ,  |  .  |  /  ||
-            //              | KEN | NAV | BCK |   | SPC | SYM| JILL 
+            //              | KEN | NAV | BCK |   | SPC | SYM  | JILL 
 
             bindings = <
                &trans &kp Q      &kp W &kp F &kp P &kp B   &kp J &kp L &kp U &kp Y     &kp SQT    &trans
                &trans &hm LGUI A &kp R &kp S &kp T &kp G   &kp M &kp N &kp E &kp I     &hm RGUI O &trans
                &trans &hm LSHFT Z      &kp X &kp C &kp D   &kp V &kp K &kp H &kp COMMA &kp DOT    &hm RSHFT FSLH &trans
-                  &kp LG(LA(LS(LCTRL))) NAV &mo NAV &kp BSPC   &kp SPACE &mo SYM &kp LG(LA(LS(LCTRL)))
+                  &kp LG(LA(LS(LCTRL))) &mo NAV &kp BSPC   &kp SPACE &mo SYM &kp LG(LA(LS(LCTRL)))
             >;
          };
                 

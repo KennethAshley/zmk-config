@@ -31,7 +31,7 @@
          };
          combo_alt {
             timeout-ms = <50>;
-            key-positions = <27 28>;
+            key-positions = <15 16>;
             bindings = <&kp LALT>;
          };
       };

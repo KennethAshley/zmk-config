@@ -31,6 +31,7 @@
          flavor = "balanced";
          bindings = <&kp>, <&kp>;
      };
+     
  };
 
       keymap {
@@ -62,7 +63,7 @@
 
             bindings = <
                &trans &kp ESC   &none     &kp LG(V) &none     &none     &none    &kp LG(Z) &kp LG(C) &none      &caps_word &trans
-               &trans &kp LGUI  &kp LALT  &kp LCTRL &kp LSHFT &none     &kp LEFT &kp DOWN  &kp UP    &kp RIGHT  &kp RET    &trans
+               &trans &sk LGUI  &sk LALT  &sk LCTRL &sk LSHFT &none     &kp LEFT &kp DOWN  &kp UP    &kp RIGHT  &kp RET    &trans
                &trans &kp LG(Z) &kp LG(X) &kp LG(C) &none     &kp LG(V) &none    &none     &none     &none      &none      &trans
                                  &kp LGUI &mo 1 &kp BSPC   &kp RET  &trans   &trans
             >;

@@ -38,13 +38,15 @@
       };
       
       behaviors {
-        swapper: swapper {
-              compatible = "zmk,behavior-tri-state";
-              label = "SWAPPER";
-              #binding-cells = <0>;
-              bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
-              ignored-key-positions = <21>;
-          };
+        bhm: balanced_homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;    // <---[[moderate duration]]
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+        };
       };
    
       keymap {
@@ -60,8 +62,8 @@
 
             bindings = <
                &trans &kp Q      &kp W &kp F &kp P &kp B   &kp J &kp L &kp U &kp Y     &kp SQT    &trans
-               &trans &mt LGUI A &kp R &kp S &kp T &kp G   &kp M &kp N &kp E &kp I     &mt RGUI O &trans
-               &trans &mt LSHFT Z      &kp X &kp C &kp D   &kp V &kp K &kp H &kp COMMA &kp DOT    &mt RSHFT FSLH &trans
+               &trans &bhm LGUI A &kp R &kp S &kp T &kp G   &kp M &kp N &kp E &kp I     &bhm RGUI O &trans
+               &trans &bhm LSHFT Z      &kp X &kp C &kp D   &kp V &kp K &kp H &kp COMMA &kp DOT    &bhm RSHFT FSLH &trans
                   &kp LG(LA(LS(LCTRL))) &mo NAV &kp BSPC   &kp SPACE &mo SYM &kp LG(LS(LALT))
             >;
          };

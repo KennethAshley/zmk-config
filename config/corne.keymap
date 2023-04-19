@@ -21,19 +21,21 @@
 };
 
 / {
-    behaviors {
-     hm: balanced_homerow_mods {
-         compatible = "zmk,behavior-hold-tap";
-         label = "HOMEROW_MODS";
-         #binding-cells = <2>;
-         tapping-term-ms = <200>;    // <---[[moderate duration]]
-         quick-tap-ms = <0>;
-         flavor = "balanced";
-         bindings = <&kp>, <&kp>;
-     };
-     
- };
 
+      combos {
+         compatible = "zmk,combos";
+         combo_esc {
+            timeout-ms = <50>;
+            key-positions = <2 3>;
+            bindings = <&kp ESC>;
+         };
+         combo_alt {
+            timeout-ms = <50>;
+            key-positions = <27 28>;
+            bindings = <&kp LALT>;
+         };
+      };
+   
       keymap {
          compatible = "zmk,keymap";
          
@@ -46,9 +48,9 @@
             //              | NAV | KEN | BCK |   | SPC | TAB | SYM
 
             bindings = <
-               &trans &kp Q      &kp W      &kp F       &kp P       &kp B   &kp J &kp L       &kp U       &kp Y       &kp SQT    &trans
-               &trans &hm LGUI A &hm LALT R &hm LCTRL S &hm LSHFT T &kp G   &kp M &hm LSHFT N &hm LCTRL E &hm LALT I  &hm LGUI O &trans
-               &trans &kp Z      &kp X      &kp C       &kp D       &kp V   &kp K &kp H       &kp COMMA   &kp DOT     &kp FSLH   &trans
+               &trans &kp Q      &kp W &kp F &kp P &kp B   &kp J &kp L &kp U &kp Y     &kp SQT    &trans
+               &trans &mt LGUI A &kp R &kp S &kp T &kp G   &kp M &kp N &kp E &kp I     &mt RGUI O &trans
+               &trans &mt LSHFT Z      &kp X &kp C &kp D   &kp V &kp K &kp H &kp COMMA &kp DOT    &mt RSHFT FSLH   &trans
                             &mo NAV &none &kp BSPC   &kp SPACE  &kp TAB &mo SYM
             >;
          };

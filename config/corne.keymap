@@ -12,10 +12,6 @@
 #define NAV   1
 #define SYM   2
 
-&mt {
-   tapping-term-ms = <100>;
-};
-
 &caps_word {
     continue-list = <UNDERSCORE MINUS>;
 };
@@ -37,13 +33,13 @@
       };
       
       behaviors {
-        bhm: balanced_homerow_mods {
+        hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;    // <---[[moderate duration]]
+            tapping-term-ms = <150>;
             quick-tap-ms = <0>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
       };
@@ -57,13 +53,13 @@
             // ||  Q  |  W  |  F  |  P  |  B  |   |  J  |  L   |  U  |  Y  |  '  ||
             // ||  A  |  R  |  S  |  T  |  G  |   |  M  |  N   |  E  |  I  |  O  ||
             // ||  Z  |  X  |  C  |  D  |  V  |   |  K  |  H   |  ,  |  .  |  /  ||
-            //              | NAV | KEN | BCK |   | SPC | TAB | SYM
+            //              | NAV | KEN | BCK |   | SPC | JILL | SYM
 
             bindings = <
                &trans &kp Q      &kp W &kp F &kp P &kp B   &kp J &kp L &kp U &kp Y     &kp SQT    &trans
-               &trans &bhm LGUI A &kp R &kp S &kp T &kp G   &kp M &kp N &kp E &kp I     &bhm RGUI O &trans
-               &trans &bhm LSHFT Z      &kp X &kp C &kp D   &kp V &kp K &kp H &kp COMMA &kp DOT    &bhm RSHFT FSLH &trans
-                            &mo NAV &none &kp BSPC   &kp SPACE  &kp TAB &mo SYM
+               &trans &hm LGUI A &kp R &kp S &kp T &kp G   &kp M &kp N &kp E &kp I     &hm RGUI O &trans
+               &trans &hm LSHFT Z      &kp X &kp C &kp D   &kp V &kp K &kp H &kp COMMA &kp DOT    &hm RSHFT FSLH &trans
+                  &mo NAV &kp LG(LA(LS(LCTRL))) &kp BSPC   &kp SPACE  &kp LG(LA(LS(LCTRL))) &mo SYM
             >;
          };
                 
@@ -72,13 +68,13 @@
             // -----------------------------------------------------------------------------------------
             // || ESC |     |     |     |     |   |     |     |     |     | CAP ||
             // || SPR | ALT | CTR | SHT |     |   | LFT | DWN | UP  | RGT | ENT ||
-            // || UND | CUT | CPY |     | PST |   |     |     |     |     |     ||
+            // || UND | CUT | CPY |     | PST |   | TAB?| TAB |     |     |     ||
             //              | GUI | LWR | BCK |   | ENT |     |     |
 
             bindings = <
                &trans &kp ESC   &none     &kp LG(V) &none     &none     &none    &kp LG(Z) &kp LG(C) &none      &caps_word &trans
                &trans &sk LGUI  &sk LALT  &sk LCTRL &sk LSHFT &none     &kp LEFT &kp DOWN  &kp UP    &kp RIGHT  &kp RET    &trans
-               &trans &kp LG(Z) &kp LG(X) &kp LG(C) &none     &kp LG(V) &none    &none     &none     &none      &none      &trans
+               &trans &kp LG(Z) &kp LG(X) &kp LG(C) &none     &kp LG(V) &none    &kp TAB     &kp TAB   &none      &none      &trans
                                  &kp LGUI &mo 1 &kp BSPC   &kp RET  &trans   &trans
             >;
          };

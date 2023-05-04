@@ -35,6 +35,16 @@
             key-positions = <15 16>;
             bindings = <&kp LALT>;
          };
+         combo_alt {
+             timeout-ms = <50>;
+             key-positions = <8 9>;
+             bindings = <&kp DEL>;
+          };
+          combo_alt {
+             timeout-ms = <50>;
+             key-positions = <19 20>;
+             bindings = <&kp BSPC>;
+          };
       };
       
       behaviors {

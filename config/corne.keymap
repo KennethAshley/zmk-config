@@ -66,6 +66,15 @@
             ignored-key-positions = <21>;
         };
       };
+      
+      macros {
+        macro_alt_tab: macro_alt_tab {
+          compatible = "zmk,behavior-macro";
+          label = "macro_alt_tab";
+          #binding-cells = <0>;
+          bindings = <&kp LEFT_ALT>, <&kp TAB>;
+        };
+      };
    
       keymap {
          compatible = "zmk,keymap";
@@ -98,7 +107,7 @@
                &trans &kp LG(Q) &kp LG(W) &kp LG(F) &none     &none       &none    &none     &none  &none      &caps_word &trans
                &trans &kp LG(A) &kp LG(R) &kp LG(S) &kp LG(T) &none       &kp LEFT &kp DOWN  &kp UP &kp RIGHT  &kp RET    &trans
                &trans &kp LG(Z) &kp LG(X) &kp LG(C) &none     &kp LG(V)   &none    &kp TAB   &trans &trans     &none      &trans
-                                              &kp LGUI  &mo 1 &kp SPACE   &none    &trans    &trans
+                                              &kp LGUI  &mo 1 &kp SPACE   &macro_alt_tab    &trans    &trans
             >;
          };
 

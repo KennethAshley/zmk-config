@@ -71,10 +71,10 @@
             //              | KEN | NAV | BCK |   | SPC | SYM  | JILL 
 
             bindings = <
-               &trans &kp Q      &kp W &kp F &kp P &kp B   &kp J &kp L &kp U &kp Y     &kp SQT    &trans
-               &trans &bhm LGUI A &kp R &kp S &kp T &kp G   &kp M &kp N &kp E &kp I     &bhm RGUI O &trans
-               &trans &bhm LSHFT Z      &kp X &kp C &kp D   &kp V &kp K &kp H &kp COMMA &kp DOT    &bhm RSHFT FSLH &trans
-                  &kp LG(LA(LS(LCTRL))) &mo NAV &kp BSPC   &kp SPACE &mo SYM &kp LG(LS(LALT))
+               &trans &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L &kp U &kp Y     &kp SQT    &trans
+               &trans &kp A &kp R &kp S &kp T &kp G   &kp M &kp N &kp E &kp I     &kp O &trans
+               &trans &kp Z &kp X &kp C &kp D &kp V   &kp K &kp H &kp COMMA &kp DOT &kp FSLH &trans
+                  &trans &mo NAV &kp BSPC   &kp SPACE &mo SYM &trans
             >;
          };
                 
@@ -87,10 +87,10 @@
             //              | GUI | LWR | BCK |   | ENT |     |     |
 
             bindings = <
-               &trans &kp ESC   &none     &kp LG(V) &none     &none     &none    &kp LG(Z) &kp LG(C) &none      &caps_word &trans
-               &trans &sk LGUI  &sk LALT  &sk LCTRL &sk LSHFT &none     &kp LEFT &kp DOWN  &kp UP    &kp RIGHT  &kp RET    &trans
-               &trans &kp LG(Z) &kp LG(X) &kp LG(C) &none     &kp LG(V) &none    &kp TAB     &kp TAB   &trans      &none      &trans
-                                 &kp LGUI &mo 1 &kp BSPC   &kp RET  &trans   &trans
+               &trans &kp LG(Q) &kp LG(W) &kp LG(F) &none     &none       &none    &kp LG(Z) &kp LG(C) &none      &caps_word &trans
+               &trans &kp LG(A) &kp LG(R) &kp LG(S) &kp LG(T) &none       &kp LEFT &kp DOWN  &kp UP    &kp RIGHT  &kp RET    &trans
+               &trans &kp LG(Z) &kp LG(X) &kp LG(C) &none     &kp LG(V)   &none    &kp TAB   &kp TAB   &trans     &none      &trans
+                                          &kp LGUI  &mo 1     &kp BSPC    &kp RET  &trans   &trans
             >;
          };
 

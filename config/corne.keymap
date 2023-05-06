@@ -21,12 +21,12 @@
       combos {
         compatible = "zmk,combos";
         combo_ESC {
-            timeout-ms = <40>;
+            timeout-ms = <50>;
             key-positions = <2 3>;
             bindings = <&kp ESC>;
         };
         combo_LSHFT {
-            timeout-ms = <40>;
+            timeout-ms = <50>;
             key-positions = <15 16>;
             bindings = <&kp LSHFT>;
         };
@@ -36,17 +36,17 @@
             bindings = <&kp BSPC>;
         };
         combo_LGUI {
-            timeout-ms = <40>;
+            timeout-ms = <50>;
             key-positions = <14 15>;
             bindings = <&kp LGUI>;
         };
         combo_LSHFCTRL {
-            timeout-ms = <40>;
-            key-positions = <13 14 15>;
+            timeout-ms = <50>;
+            key-positions = <14 15 16>;
             bindings = <&kp LS(LCTRL)>;
         };
         combo_RSHFCTRL {
-            timeout-ms = <40>;
+            timeout-ms = <50>;
             key-positions = <19 20 21>;
             bindings = <&kp RS(RCTRL)>;
         };

@@ -19,44 +19,38 @@
 / {
 
       combos {
-         compatible = "zmk,combos";
-         combo_esc {
+        compatible = "zmk,combos";
+        combo_ESC {
             timeout-ms = <50>;
             key-positions = <2 3>;
             bindings = <&kp ESC>;
-         };
-         combo_alt {
+        };
+        combo_BSPC {
             timeout-ms = <50>;
+            key-positions = <19 20>;
+            bindings = <&kp BSPC>;
+        };
+        combo_LGUI {
+            timeout-ms = <40>;
             key-positions = <15 16>;
-            bindings = <&kp LALT>;
-         };
-         combo_del {
-             timeout-ms = <50>;
-             key-positions = <8 9>;
-             bindings = <&kp DEL>;
-          };
-          combo_bspc {
-             timeout-ms = <50>;
-             key-positions = <19 20>;
-             bindings = <&kp BSPC>;
-          };
-          combo_gui {
-             timeout-ms = <50>;
-             key-positions = <14 15>;
-             bindings = <&kp LGUI>;
-          };
+            bindings = <&kp LGUI>;
+        };
+        combo_LSHFCTRL {
+            timeout-ms = <40>;
+            key-positions = <13 14 15>;
+            bindings = <&kp LS(LCTRL)>;
+        };
       };
       
       behaviors {
-        bhm: balanced_homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;    // <---[[moderate duration]]
-            quick-tap-ms = <0>;
-            flavor = "balanced";
-            bindings = <&kp>, <&kp>;
-        };
+        hm: homerow_mods {
+              compatible = "zmk,behavior-hold-tap";
+              label = "HOMEROW_MODS";
+              #binding-cells = <2>;
+              tapping_term_ms = <180>;
+              flavor = "tap-preferred";
+              bindings = <&kp>, <&kp>;
+          };
         swapper: swapper {
             compatible = "zmk,behavior-tri-state";
             label = "SWAPPER";
@@ -68,9 +62,8 @@
 
    
       keymap {
-         compatible = "zmk,keymap";
-         
-         default_layer {
+        compatible = "zmk,keymap"; 
+        default_layer {
          
             // -----------------------------------------------------------------------------------------
             // ||  Q  |  W  |  F  |  P  |  B  |   |  J  |  L   |  U  |  Y  |  '  ||
@@ -81,7 +74,7 @@
             bindings = <
                &trans &kp Q &kp W  &kp F &kp P &kp B   &kp J &kp L &kp U     &kp Y   &kp SQT  &trans
                &trans &kp A &kp R  &kp S &kp T &kp G   &kp M &kp N &kp E     &kp I   &kp O    &trans
-               &trans &bhm LSHFT Z &kp X &kp C &kp D &kp V   &kp K &kp H &kp COMMA &kp DOT &bhm RSHFT FSLH &trans
+               &trans &hm LSHFT Z &kp X &kp C &kp D &kp V   &kp K &kp H &kp COMMA &kp DOT &hm RSHFT FSLH &trans
                            &swapper &mo NAV &kp SPACE   &kp BSPC &mo SYM &trans
             >;
          };

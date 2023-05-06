@@ -87,13 +87,6 @@ ZMK_BEHAVIOR(swapper, tri_state,
             bindings = <&kp>, <&kp>;
         };
       };
-        swapper: swapper {
-          compatible = "zmk,behavior-tri-state";
-          label = "SWAPPER";
-          #binding-cells = <0>;
-          bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
-          ignored-key-positions = <21>;
-      };
    
       keymap {
         compatible = "zmk,keymap"; 

@@ -40,9 +40,8 @@
              key-positions = <19 20>;
              bindings = <&kp BSPC>;
           };
-          combo_ctrl {
+          combo_gui {
              timeout-ms = <50>;
-             layers = <0 1>;
              key-positions = <14 15>;
              bindings = <&kp LGUI>;
           };
@@ -57,13 +56,6 @@
             quick-tap-ms = <0>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
-        };
-        swapper: swapper {
-            compatible = "zmk,behavior-tri-state";
-            label = "SWAPPER";
-            #binding-cells = <0>;
-            bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
-            ignored-key-positions = <21>;
         };
       };
 
@@ -83,7 +75,7 @@
                &trans &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L &kp U     &kp Y   &kp SQT  &trans
                &trans &kp A &kp R &kp S &kp T &kp G   &kp M &kp N &kp E     &kp I   &kp O    &trans
                &trans &kp Z &kp X &kp C &kp D &kp V   &kp K &kp H &kp COMMA &kp DOT &kp FSLH &trans
-                           &swapper &mo NAV &kp SPACE   &kp BSPC &mo SYM &trans
+                           &trans &mo NAV &kp SPACE   &kp BSPC &mo SYM &trans
             >;
          };
                 

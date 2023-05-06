@@ -21,49 +21,49 @@
       combos {
         compatible = "zmk,combos";
         combo_ESC {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             layers = <0>;
             key-positions = <2 3>;
             bindings = <&kp ESC>;
         };
         combo_DEL {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             layers = <0>;
             key-positions = <8 9>;
             bindings = <&kp DEL>;
         };
         combo_LSHFT {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             layers = <0>;
             key-positions = <15 16>;
             bindings = <&kp LSHFT>;
         };
         combo_LGUI {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             layers = <0>;
             key-positions = <14 15>;
             bindings = <&kp LGUI>;
         };
         combo_LSHFCTRL {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             layers = <0>;
             key-positions = <14 15 16>;
             bindings = <&kp LS(LCTRL)>;
         };
         combo_RSHFT {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             layers = <0>;
             key-positions = <19 20>;
             bindings = <&kp RSHFT>;
         };
         combo_RGUI {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             layers = <0>;
             key-positions = <20 21>;
             bindings = <&kp RGUI>;
         };
         combo_RSHFCTRL {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             layers = <0>;
             key-positions = <19 20 21>;
             bindings = <&kp RS(RCTRL)>;

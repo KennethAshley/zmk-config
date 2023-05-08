@@ -11,7 +11,7 @@
 #include "../zmk-nodefree-config/helper.h"
 
 #define XXX &none
-#define ___ &trans
+#define ______ &trans
 
 #define DEFAULT 0
 #define NAV   1
@@ -104,10 +104,10 @@
             //              | KEN | NAV | BCK |   | SPC | SYM  | JILL 
 
             bindings = <
-               ___ &kp Q       &kp W  &kp F &kp P &kp B   &kp J &kp L &kp U     &kp Y   &kp SQT  ___
-               ___ &kp A       &kp R  &kp S &kp T &kp G   &kp M &kp N &kp E     &kp I   &kp O    ___
-               ___ &hm LSHFT Z &kp X  &kp C &kp D &kp V   &kp K &kp H &kp COMMA &kp DOT &hm RSHFT FSLH ___
-               ___ &mo NAV &kp SPACE   &kp BSPC &mo SYM ___
+               ______ &kp Q       &kp W  &kp F &kp P &kp B   &kp J &kp L &kp U     &kp Y   &kp SQT  ______
+               ______ &kp A       &kp R  &kp S &kp T &kp G   &kp M &kp N &kp E     &kp I   &kp O    ______
+               ______ &hm LSHFT Z &kp X  &kp C &kp D &kp V   &kp K &kp H &kp COMMA &kp DOT &hm RSHFT FSLH ______
+               ______ &mo NAV &kp SPACE   &kp BSPC &mo SYM ______
             >;
          };
                 
@@ -120,10 +120,10 @@
             //              | GUI | LWR | BCK |   |     |     |     |
 
             bindings = <
-               ___ &kp LG(Q) &kp LG(W) &kp LG(F) &swapper  ___       ___     &kp LG(L) ___  ___      &caps_word ___
-               ___ &kp LG(A) &kp LG(R) &kp LG(S) &kp LG(T) ___       &kp LEFT  &kp DOWN  &kp UP &kp RIGHT  &kp RET    ___
-               ___ &kp LG(Z) &kp LG(X) &kp LG(C) ___       &kp LG(V)   ___     &kp TAB   ___ ___     ___      ___
-               &kp LGUI  &mo 1 &kp SPACE   &kp RET  ___    ___
+               ______ &kp LG(Q) &kp LG(W) &kp LG(F) &swapper  ______       ______     &kp LG(L) ______  ______      &caps_word ______
+               ______ &kp LG(A) &kp LG(R) &kp LG(S) &kp LG(T) ______       &kp LEFT  &kp DOWN  &kp UP &kp RIGHT  &kp RET    ______
+               ______ &kp LG(Z) &kp LG(X) &kp LG(C) ______       &kp LG(V)   ______     &kp TAB   ______ ______     ______      ______
+               &kp LGUI  &mo 1 &kp SPACE   &kp RET  ______    ______
             >;
          };
 
@@ -136,9 +136,9 @@
             //              | GUI | LWR | BCK |   | SPC | RSE | ALT
 
             bindings = <
-               &trans    &kp EXCL  &kp AT   &kp HASH &kp DLLR &kp PRCNT   &kp KP_MULTIPLY &kp N7 &kp N8 &kp N9 &trans &trans
-               &trans    &kp GRAVE &kp LBKT &kp LBRC &kp LPAR &trans      &kp MINUS &kp N4 &kp N5 &kp N6 &kp PLUS &trans
-               &kp TILDE &kp SEMI  &kp RBKT &kp RBRC &kp RPAR &trans      &kp N0 &kp N1 &kp N2 &kp N3 &kp EQUAL &trans
+               ______ &kp EXCL  &kp AT   &kp HASH &kp DLLR &kp PRCNT   &kp KP_MULTIPLY &kp N7 &kp N8 &kp N9 &trans ______
+               ______ &kp GRAVE &kp SEMI &kp LBKT &kp LPAR &kp LBRC      &kp MINUS &kp N4 &kp N5 &kp N6 &kp PLUS ______
+               ______ &kp TILDE &kp COLON &kp RBKT &kp RPAR &kp RBRC      &kp N0 &kp N1 &kp N2 &kp N3 &kp EQUAL ______
                &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
             >;
          };

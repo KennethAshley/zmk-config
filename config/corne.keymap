@@ -26,50 +26,42 @@
       combos {
         compatible = "zmk,combos";
         combo_ESC {
-            timeout-ms = <40>;
-            layers = <0>;
+            timeout-ms = <50>;
             key-positions = <2 3>;
             bindings = <&kp ESC>;
         };
         combo_DEL {
-            timeout-ms = <40>;
-            layers = <0>;
+            timeout-ms = <50>;
             key-positions = <8 9>;
             bindings = <&kp DEL>;
         };
         combo_LSHFT {
-            timeout-ms = <40>;
-            layers = <0>;
+            timeout-ms = <50>;
             key-positions = <15 16>;
             bindings = <&kp LSHFT>;
         };
         combo_LGUI {
-            timeout-ms = <40>;
-            layers = <0>;
+            timeout-ms = <50>;
             key-positions = <14 15>;
             bindings = <&kp LGUI>;
         };
         combo_LSHFCTRL {
-            timeout-ms = <40>;
-            layers = <0>;
+            timeout-ms = <50>;
             key-positions = <14 15 16>;
             bindings = <&kp LS(LCTRL)>;
         };
         combo_RSHFT {
-            timeout-ms = <40>;
-            layers = <0>;
+            timeout-ms = <50>;
             key-positions = <19 20>;
             bindings = <&kp RSHFT>;
         };
         combo_RGUI {
-            timeout-ms = <40>;
-            layers = <0>;
+            timeout-ms = <50>;
             key-positions = <20 21>;
             bindings = <&kp RGUI>;
         };
         combo_RSHFCTRL {
-            timeout-ms = <40>;
-            layers = <0>;
+            timeout-ms = <50>;
             key-positions = <19 20 21>;
             bindings = <&kp RS(RCTRL)>;
         };
@@ -120,10 +112,10 @@
             //              | GUI | LWR | BCK |   |     |     |     |
 
             bindings = <
-               ______ &kp LG(Q) &kp LG(W) &kp LG(F) &swapper  ______       ______     &kp LG(L) ______  ______      &caps_word ______
-               ______ &kp LG(A) &kp LG(R) &kp LG(S) &kp LG(T) ______       &kp LEFT  &kp DOWN  &kp UP &kp RIGHT  &kp RET    ______
-               ______ &kp LG(Z) &kp LG(X) &kp LG(C) ______       &kp LG(V)   ______     &kp TAB   ______ ______     ______      ______
-               &kp LGUI  &mo 1 &kp SPACE   &kp RET  ______    ______
+               ______   &kp LG(Q) &kp LG(W) &kp LG(F) &swapper  ______       ______   &kp LG(L) ______  ______    &caps_word ______
+               ______   &kp LG(A) &kp LG(R) &kp LG(S) &kp LG(T) ______       &kp LEFT &kp DOWN  &kp UP &kp RIGHT  &kp RET    ______
+               ______   &kp LG(Z) &kp LG(X) &kp LG(C) ______    &kp LG(V)    ______   &kp TAB   ______ ______     ______     ______
+               &kp LGUI &mo 1     &kp SPACE                                  &kp RET  ______    ______
             >;
          };
 

@@ -119,9 +119,9 @@
 
             bindings = <
                ___ &kp LG(Q) &kp LG(W) &kp LG(F) &swapper  ___       ___     &kp LG(L) ___  ___      &caps_word ___
-               ___ &kp LG(A) &kp LG(R) &kp LG(S) &kp LG(T) &swapper       &kp LEFT  &kp DOWN  &kp UP &kp RIGHT  &kp RET    ___
+               ___ &kp LG(A) &kp LG(R) &kp LG(S) &kp LG(T) ___       &kp LEFT  &kp DOWN  &kp UP &kp RIGHT  &kp RET    ___
                ___ &kp LG(Z) &kp LG(X) &kp LG(C) ___       &kp LG(V)   ___     &kp TAB   ___ ___     ___      ___
-               &kp LGUI  &mo 1 &kp SPACE   &swapper  ___    ___
+               &kp LGUI  &mo 1 &kp SPACE   &kp RET  ___    ___
             >;
          };
 

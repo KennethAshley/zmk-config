@@ -102,10 +102,10 @@
                ______ &kp Q       &kp W  &kp F &kp P &kp B   &kp J &kp L &kp U     &kp Y   &kp SQT  ______
                ______ &kp A       &kp R  &kp S &kp T &kp G   &kp M &kp N &kp E     &kp I   &kp O    ______
                ______ &hm LSHFT Z &kp X  &kp C &kp D &kp V   &kp K &kp H &kp COMMA &kp DOT &hm RSHFT FSLH ______
-               ______ &mo NAV &mt HYP SPACE   &kp BSPC &mo SYM ______
+               &kp HYP &mo NAV &kp SPACE   &kp BSPC &mo SYM &kp HYPER(K)
             >;
          };
-                
+                   
          lower_layer {
          
             // -----------------------------------------------------------------------------------------

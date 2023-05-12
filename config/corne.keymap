@@ -48,6 +48,11 @@
             key-positions = <14 15>;
             bindings = <&kp LGUI>;
         };
+        combo_LCTRL {
+            timeout-ms = <50>;
+            key-positions = <26 27>;
+            bindings = <&kp LCTRL>;
+        };
         combo_LSHFCTRL {
             timeout-ms = <50>;
             key-positions = <14 15 16>;

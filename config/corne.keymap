@@ -50,14 +50,9 @@
             key-positions = <14 15 16>;
             bindings = <&kp LS(LCTRL)>;
         };
-        combo_RSHFT {
-            timeout-ms = <50>;
-            key-positions = <19 20>;
-            bindings = <&kp RSHFT>;
-        };
         combo_RGUI {
             timeout-ms = <50>;
-            key-positions = <20 21>;
+            key-positions = <19 20>;
             bindings = <&kp RGUI>;
         };
         combo_RSHFCTRL {

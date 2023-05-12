@@ -48,11 +48,6 @@
             key-positions = <14 15>;
             bindings = <&kp LGUI>;
         };
-        combo_LCTRL {
-            timeout-ms = <50>;
-            key-positions = <26 27>;
-            bindings = <&kp LCTRL>;
-        };
         combo_LSHFCTRL {
             timeout-ms = <50>;
             key-positions = <14 15 16>;
@@ -104,7 +99,7 @@
             //              | KEN | NAV | BCK |   | SPC | SYM  | JILL 
 
             bindings = <
-               ______ &kp Q       &kp W  &kp F &kp P &kp B   &kp J &kp L &kp U     &kp Y   &kp SQT  ______
+               ______ &hm LSHFT Q       &kp W  &kp F &kp P &kp B   &kp J &kp L &kp U     &kp Y   &hm RSHFT SQT  ______
                ______ &kp A       &kp R  &kp S &kp T &kp G   &kp M &kp N &kp E     &kp I   &kp O    ______
                ______ &hm LSHFT Z &kp X  &kp C &kp D &kp V   &kp K &kp H &kp COMMA &kp DOT &hm RSHFT FSLH ______
                &kp HYP &mo NAV &kp SPACE   &kp BSPC &mo SYM &kp HYPER(K)

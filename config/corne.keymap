@@ -26,6 +26,23 @@
  
 / {
 
+      behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping_term_ms = <180>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+        swapper: swapper {
+            compatible = "zmk,behavior-tri-state";
+            label = "SWAPPER";
+            #binding-cells = <0>;
+            bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
+            ignored-key-positions = <21>;
+        };
+      };
       combos {
         compatible = "zmk,combos";
         combo_ESC {
@@ -47,7 +64,7 @@
         };
         combo_LSHFCTRL {
             timeout-ms = <50>;
-            key-positions = <14 15 16>;
+            key-positions = <14 15>;
             bindings = <&kp LS(LCTRL)>;
         };
         combo_RGUI {
@@ -57,28 +74,11 @@
         };
         combo_RSHFCTRL {
             timeout-ms = <50>;
-            key-positions = <19 20 21>;
+            key-positions = <20 21>;
             bindings = <&kp RS(RCTRL)>;
         };
       };
-      
-      behaviors {
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
-            #binding-cells = <2>;
-            tapping_term_ms = <180>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-        swapper: swapper {
-            compatible = "zmk,behavior-tri-state";
-            label = "SWAPPER";
-            #binding-cells = <0>;
-            bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
-            ignored-key-positions = <21>;
-        };
-      };
+
    
       keymap {
         compatible = "zmk,keymap"; 

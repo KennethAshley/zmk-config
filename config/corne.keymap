@@ -32,20 +32,17 @@
             timeout-ms = <50>;
             key-positions = <2 3>;
             bindings = <&kp ESC>;
+            layers = <0>;
         };
         combo_DEL {
             timeout-ms = <50>;
             key-positions = <8 9>;
             bindings = <&kp DEL>;
-        };
-        combo_LSHFT {
-            timeout-ms = <50>;
-            key-positions = <15 16>;
-            bindings = <&kp LSHFT>;
+            layers = <0>;
         };
         combo_LGUI {
             timeout-ms = <50>;
-            key-positions = <14 15>;
+            key-positions = <15 16>;
             bindings = <&kp LGUI>;
         };
         combo_LSHFCTRL {

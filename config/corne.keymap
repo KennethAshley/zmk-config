@@ -17,6 +17,9 @@
 #define NAV   1
 #define SYM   2
 
+#define HYP LS(LC(LA(LGUI)))
+#define HYPER(key) LS(LC(LA(LG(key))))
+
 &caps_word {
     continue-list = <UNDERSCORE MINUS BSPC>;
 };
@@ -99,7 +102,7 @@
                ______ &kp Q       &kp W  &kp F &kp P &kp B   &kp J &kp L &kp U     &kp Y   &kp SQT  ______
                ______ &kp A       &kp R  &kp S &kp T &kp G   &kp M &kp N &kp E     &kp I   &kp O    ______
                ______ &hm LSHFT Z &kp X  &kp C &kp D &kp V   &kp K &kp H &kp COMMA &kp DOT &hm RSHFT FSLH ______
-               ______ &mo NAV &kp SPACE   &kp BSPC &mo SYM ______
+               ______ &mo NAV &mt HYP SPACE   &kp BSPC &mo SYM ______
             >;
          };
                 
@@ -112,10 +115,10 @@
             //              | GUI | LWR | BCK |   |     |     |     |
 
             bindings = <
-               ______   &kp LG(Q) &kp LG(W) &kp LG(F) &swapper  ______       ______   &kp LG(L) ______  ______    &caps_word ______
+               ______   &kp LG(Q) &kp LG(W) &kp LG(F) &swapper  &kp LG(B)       ______   &kp LG(L) ______  ______    &caps_word ______
                ______   &kp LG(A) &kp LG(R) &kp LG(S) &kp LG(T) ______       &kp LEFT &kp DOWN  &kp UP &kp RIGHT  &kp RET    ______
-               ______   &kp LG(Z) &kp LG(X) &kp LG(C) ______    &kp LG(V)    ______   &kp TAB   ______ ______     ______     ______
-               &kp LGUI &mo 1     &kp SPACE                                  &kp RET  ______    ______
+               ______   &hm LSHFT LG(Z) &kp LG(X) &kp LG(C) &kp LG(D) &kp LG(V)    ______   &kp TAB   ______ ______     ______     ______
+               &kp LGUI &mo 1     &kp SPACE                                  &kp HYPER(K)  &kp HYPER(E)  &kp HYPER(N)
             >;
          };
 

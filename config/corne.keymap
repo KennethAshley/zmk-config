@@ -81,6 +81,12 @@
             bindings = <&kp RS(RGUI)>;
             layers = <0>;
         };
+        combo_LALT {
+            timeout-ms = <50>;
+            key-positions = <26 27>;
+            bindings = <&kp LALT>;
+            layers = <0>;
+        };
       };
 
    

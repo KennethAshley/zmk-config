@@ -63,10 +63,10 @@
             bindings = <&kp LGUI>;
             layers = <0>;
         };
-        combo_LSHFCTRL {
+        combo_LSHFLGUI {
             timeout-ms = <50>;
             key-positions = <14 15>;
-            bindings = <&kp LS(LCTRL)>;
+            bindings = <&kp LS(LGUI)>;
             layers = <0>;
         };
         combo_RGUI {
@@ -75,10 +75,10 @@
             bindings = <&kp RGUI>;
             layers = <0>;
         };
-        combo_RSHFCTRL {
+        combo_RSHFRGUI {
             timeout-ms = <50>;
             key-positions = <20 21>;
-            bindings = <&kp RS(RCTRL)>;
+            bindings = <&kp RS(RGUI)>;
             layers = <0>;
         };
       };

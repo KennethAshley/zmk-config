@@ -117,9 +117,9 @@
             //              | GUI | LWR | BCK |   |     |     |     |
 
             bindings = <
-               ______   &kp LG(Q) &kp LG(W) &kp LG(F) &swapper  &kp LG(B)         ______   &kp LG(L) ______     ______     &caps_word ______
-               ______   &kp LG(A) &kp LG(R) &kp LG(S) &kp LG(T) &key_repeat       &kp LEFT &kp DOWN  &kp UP     &kp RIGHT  &kp RET    ______
-               ______   &hm LSHFT LG(Z) &kp LG(X) &kp LG(C) &kp LG(D) &kp LG(V)   ______   &kp TAB   &bt BT_CLR &bt BT_PRV &bt BT_NXT ______
+               ______   &kp LG(Q) &kp LG(W) &kp LG(F) &swapper  &kp LG(B)         ______   &kp LG(L) ______     ______       &caps_word ______
+               ______   &kp LG(A) &kp LG(R) &kp LG(S) &kp LG(T) &key_repeat       &kp LEFT &kp DOWN  &kp UP     &kp RIGHT    &kp RET    ______
+               ______   &hm LSHFT LG(Z) &kp LG(X) &kp LG(C) &kp LG(D) &kp LG(V)   ______   &kp TAB   &bt BT_CLR &bt BT_SEL 1 ______     ______
                &kp LGUI &mo 1     &kp SPACE                                  &kp HYPER(K)  &kp HYPER(E)  &kp HYPER(N)
             >;
          };

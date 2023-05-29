@@ -120,7 +120,7 @@
                ______   &kp LG(Q)       &kp LG(W) &kp LG(F) &kp LG(P) &kp LG(B)   ______    &kp LG(L)  ______  ______    &caps_word  ______
                ______   &kp LG(A)       &kp LG(R) &kp LG(S) &kp LG(T) &swapper    &kp LEFT  &kp DOWN   &kp UP  &kp RIGHT &kp RET     ______
                ______   &hm LSHFT LG(Z) &kp LG(X) &kp LG(C) &kp LG(D) &kp LG(V)   &kp LG(K) &kp TAB    ______ ______     ______
-               &swapper &mo 1 &kp SPACE                                 &kp HYPER(S)  &kp HYPER(E) &kp HYPER(N)
+               &kp LGUI &mo 1 &kp SPACE                                 &kp HYPER(S)  &kp HYPER(E) &kp HYPER(N)
             >;
          };
 

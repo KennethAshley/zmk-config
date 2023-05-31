@@ -76,10 +76,16 @@
             bindings = <&kp RGUI>;
             layers = <0>;
         };
-        combo_RSHFRGUI {
+        combo_RCTRL {
             timeout-ms = <50>;
             key-positions = <20 21>;
-            bindings = <&kp RS(RGUI)>;
+            bindings = <&kp RCTRL>;
+            layers = <0>;
+        };
+        combo_RALT {
+            timeout-ms = <50>;
+            key-positions = <32 33>;
+            bindings = <&kp RALT>;
             layers = <0>;
         };
         combo_LALT {

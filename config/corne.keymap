@@ -120,7 +120,7 @@
             bindings = <
                ______ &kp Q       &kp W  &kp F &kp P &kp B   &kp J &kp L &kp U     &kp Y   &kp SQT        ______
                ______ &kp A       &kp R  &kp S &kp T &kp G   &kp M &kp N &kp E     &kp I   &kp O          ______
-               ______ &hm LSHFT Z &kp X  &kp C &kp D &kp V   &kp K &kp H &kp COMMA &kp DOT &hm RSHFT FSLH ______
+               ______ &mt LSHFT Z &kp X  &kp C &kp D &kp V   &kp K &kp H &kp COMMA &kp DOT &mt RSHFT FSLH ______
                                &kp LCTRL &mo NAV &kp SPACE   &kp BSPC &mo SYM &kp RGUI
             >;
          };
@@ -136,7 +136,7 @@
             bindings = <
                ______   &kp LG(Q)       &kp LG(W) &kp LG(F) &kp LG(P) &kp LG(B)   ______    &kp LG(L)  ______  ______    &caps_word  ______
                ______   &kp LG(A)       &kp LG(R) &kp LG(S) &kp LG(T) &swapper    &kp LEFT  &kp DOWN   &kp UP  &kp RIGHT &kp RET     ______
-               ______   &hm LSHFT LG(Z) &kp LG(X) &kp LG(C) &kp LG(D) &kp LG(V)   &kp LG(K) &kp TAB    ______ ______     ______
+               ______   &mt LSHFT LG(Z) &kp LG(X) &kp LG(C) &kp LG(D) &kp LG(V)   &kp LG(K) &kp TAB    ______ ______     ______
                &kp LGUI &mo 1 &kp SPACE                                 &raycast  &kp E  &kp N
             >;
          };

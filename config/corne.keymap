@@ -56,10 +56,10 @@
             bindings = <&kp LGUI>;
             layers = <0>;
         };
-        combo_LSHFLGUI {
+        combo_LALT {
             timeout-ms = <50>;
             key-positions = <14 15>;
-            bindings = <&kp LS(LGUI)>;
+            bindings = <&kp LALT>;
             layers = <0>;
         };
         combo_RGUI {
